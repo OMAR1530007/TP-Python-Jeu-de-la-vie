@@ -9,7 +9,7 @@ def creer_grille(n, m):
 
 
 n = 60
-m = 60
+m = 10
 grille = creer_grille(n, m)
 for ligne in grille:
     print(ligne)
