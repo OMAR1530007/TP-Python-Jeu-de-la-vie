@@ -8,8 +8,8 @@ def creer_grille(n, m):
     return grille
 
 
-n = 5
-m = 5
+n = 60
+m = 60
 grille = creer_grille(n, m)
 for ligne in grille:
     print(ligne)
