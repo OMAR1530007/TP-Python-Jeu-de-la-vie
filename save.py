@@ -1,13 +1,13 @@
 import os
 
-def save_grid(grid_history, filename="grid.txt"):
+def save_grid(grid_history, filename="grid_save.txt"):
     with open(filename, "w", encoding="utf-8") as f:
         for grid in grid_history:
             for line in grid:
                 f.write(' '.join(line) + "\n")
             f.write("\n") 
 
-def load_grid(filename="grid.txt"):
+def load_grid(filename="grid_save.txt"):
     if not os.path.exists(filename):
         return []
     with open(filename, "r", encoding="utf-8") as f:
